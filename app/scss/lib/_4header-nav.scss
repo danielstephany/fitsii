@@ -1,0 +1,52 @@
+/* header-nav ************************************************
+*************************************************************/
+header {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	div {
+		display: block;
+		height: 75px;
+		background: #76aece;
+		text-align: center;
+		h1 {
+			color: #fff;
+			margin: 0;
+			padding: 10px;
+			font-size: 3em; 
+		}
+
+	}
+}
+
+.main-nav {
+	display: block;
+	padding: 0;
+	margin: 0;
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 30px;
+	z-index: 2000;
+	ul {
+		display: block;
+		width: 100%;
+		margin: auto;
+		max-width: 600px;
+		li {
+			display: inline-block;
+			width: 25%;
+			height: 30px;
+			margin: 0;
+			padding: 3px;
+			text-align: center;
+			float: left;
+			a {
+				display: block;
+				color: #fff;
+				font-size: 1.2em;
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+}

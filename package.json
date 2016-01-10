@@ -1,0 +1,14 @@
+{
+  "name": "fitsii",
+  "version": "1.0.0",
+  "description": "fitness webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Stephany",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

@@ -1,0 +1,40 @@
+/* health ********************************************
+*****************************************************/
+.health-title {
+	padding: 10px 0;
+	text-align: center;
+	input[type=text] {
+		border-radius: 5px;
+	}
+	select {
+		cursor: pointer;
+		background-color: #fff;
+	}
+	h1{
+		color: #fff;
+	}
+}
+
+.search-list {
+	background-color: rgba(0,0,0,.8);
+	margin: 0;
+	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
+	min-height: 400px;
+	li {
+		padding: 5px 0;
+		a{
+			color: #fff;
+			h2 {
+				font-size: 1.4em;
+				margin: 0.5em 0;
+			}
+		}
+		p {
+			color: #b2d1d8;
+			margin: 10px 0;
+			padding: 0;
+		}
+	}
+}

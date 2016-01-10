@@ -1,0 +1,27 @@
+/* articals *****************************************
+****************************************************/
+
+.artical {
+	background-color: rgba(0,0,0,.8);
+	margin: 0;
+	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
+	min-height: 400px;
+	h1 {
+		font-size: 1.8em;
+		color: #fff;
+		margin: 20px 0 30px;
+		text-align: center;
+	}
+	.artical-p {
+		color: #b2d1d8;
+		margin: 20px auto;
+		text-indent: 30px;
+		max-width: 800px; 
+	}
+	.author {
+		color: #b2d1d8;
+		margin: 20px auto;
+	}
+}
