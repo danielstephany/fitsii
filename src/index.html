@@ -51,7 +51,7 @@
 					</select>
 					</div>
 					<ul class="search-list">
-						<li ng-repeat="artical in articals | filter:query | orderBy:order">
+						<li ng-repeat="artical in mock.articals | filter:query | orderBy:order">
 							<a href="#"><h2>{{artical.title}}</h2></a>
 							<p>{{artical.snippet}}</p>
 						</li>

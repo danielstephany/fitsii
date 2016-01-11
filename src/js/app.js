@@ -2,8 +2,8 @@
 var fitsiiApp = angular.module('fitsiiApp', []);
 
 fitsiiApp.controller('articalListCtrl', function($scope, $http) {
-  $http.get("db/articals.json").success(function(data) {
-  	$scope.articals = data;
+  $http.get("mock/articals.json").success(function(data) {
+  	$scope.mock = data;
   })
 
   	$scope.order = 'age';
