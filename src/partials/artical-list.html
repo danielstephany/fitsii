@@ -1,22 +1,18 @@
 <div class="veiw-container health">
 	<div class="wrap">
-		<div class="health-title">
+		<div class="search-title">
 		<h1>Health Articals</h1>
-		<input type="text">
-		<select>
-			<option>Newest</option>
-			<option>Oldest</option>
-			<option>Alphabetical</option>
+		<input ng-model="query" type="text">
+		<select ng-model="order">
+			<option value="age">Newest</option>
+			<option value="-age">Oldest</option>
+			<option value="title">Alphabetical</option>
 		</select>
 		</div>
 		<ul class="search-list">
-			<li>
-				<a href="#"><h2>Healthy stuff and things.</h2></a>
-				<p>this is some text and stuff that should be a brief description of the artical nothing to long.</p>
-			</li>
-			<li>
-				<a href="#"><h2>Healthy stuff and things.</h2></a>
-				<p>this is some text and stuff that should be a brief description of the artical nothing to long.</p>
+			<li ng-repeat="artical in mock.articals | filter:query | orderBy:order">
+				<a href="#/articals/{{artical.id}}"><h2>{{artical.title}}</h2></a>
+				<p>{{artical.snippet}}</p>
 			</li>
 		</ul>
 	</div>

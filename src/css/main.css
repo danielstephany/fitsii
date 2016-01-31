@@ -489,17 +489,11 @@ a {
   min-height: 100vh;
   width: 100%; }
 
-.veiw-container {
-  margin: 0 auto;
-  padding: 50px 0;
-  width: 100%;
-  max-width: 1200px; }
-
 .wrap {
   display: block;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0; }
+  padding: 50px 0; }
 
 .clear:after {
   content: "";
@@ -583,6 +577,13 @@ footer {
 /* home ***********************************************
 ******************************************************/
 .home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
   background: url("../img/fitsii-s.jpg") center center no-repeat;
   background-size: cover; }
   @media only screen and (min-width: 600px) {
@@ -593,36 +594,38 @@ footer {
     .home {
       background: url("../img/fitsii-l.jpg") center center no-repeat;
       background-size: cover; } }
-  .home .home-info {
-    background-color: rgba(0, 0, 0, 0.6);
-    margin: 100px 0 0;
-    padding: 5px 10px;
-    width: 100%;
-    text-align: center; }
-    .home .home-info h2 {
-      color: #b2d1d8;
-      font-size: 2em;
-      margin: 10px;
-      padding: 0; }
-    .home .home-info p {
-      color: #b2d1d8;
-      margin: 5px; }
 
-/* health ********************************************
+.home-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 100px 0 0;
+  padding: 5px 10px;
+  width: 100%;
+  text-align: center; }
+  .home-info h2 {
+    color: #b2d1d8;
+    font-size: 2em;
+    margin: 10px;
+    padding: 0; }
+  .home-info p {
+    color: #b2d1d8;
+    margin: 5px; }
+
+/* search list styles ********************************************
 *****************************************************/
-.health-title {
+.search-title {
   padding: 10px 0;
   text-align: center; }
-  .health-title input[type=text] {
+  .search-title input[type=text] {
     border-radius: 5px; }
-  .health-title select {
+  .search-title select {
     cursor: pointer;
     background-color: #fff; }
-  .health-title h1 {
+  .search-title h1 {
     color: #fff; }
 
 .search-list {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 0;
   padding: 10px;
   border-radius: 10px;
@@ -640,10 +643,37 @@ footer {
       margin: 10px 0;
       padding: 0; }
 
+.exercise-list {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 400px; }
+  .exercise-list li {
+    display: inline-block;
+    padding: 5px;
+    width: 49%; }
+    @media only screen and (min-width: 600px) {
+      .exercise-list li {
+        width: 25%;
+        float: left; } }
+    .exercise-list li a {
+      color: #fff; }
+      .exercise-list li a p {
+        display: inline-block;
+        color: #b2d1d8;
+        font-size: 0.9em;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 35px;
+        overflow: hidden; }
+
 /* articals *****************************************
 ****************************************************/
 .artical {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 0;
   padding: 10px;
   border-radius: 10px;
@@ -662,5 +692,76 @@ footer {
   .artical .author {
     color: #b2d1d8;
     margin: 20px auto; }
+
+/* exercise description *********************************
+********************************************************/
+.exercise-title {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  text-align: center; }
+  .exercise-title h1 {
+    color: #fff;
+    margin: 0;
+    padding: 20px 0; }
+
+.exercise-body {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+  margin: 0; }
+  .exercise-body img {
+    border-radius: 10px; }
+    @media only screen and (min-width: 650px) {
+      .exercise-body img {
+        margin-top: 40px;
+        width: 35%;
+        float: left; } }
+
+.pose-steps {
+  display: block;
+  padding: 20px 0;
+  margin: 0;
+  min-height: 400px; }
+  @media only screen and (min-width: 650px) {
+    .pose-steps {
+      display: inline-block;
+      padding: 0px 10px;
+      width: 65%;
+      float: right; } }
+  .pose-steps h2 {
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 20px;
+    text-align: center; }
+  .pose-steps ul li {
+    display: inline-block;
+    width: 100%; }
+    .pose-steps ul li p {
+      color: #b2d1d8; }
+
+.benifits {
+  display: block;
+  padding: 20px 0; }
+  @media only screen and (min-width: 650px) {
+    .benifits {
+      width: 35%;
+      float: left; } }
+  .benifits h2 {
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center; }
+  .benifits ul {
+    margin: 0;
+    padding: 10px 0; }
+    .benifits ul li {
+      color: #b2d1d8;
+      display: block;
+      margin: 0;
+      padding: 3px 0 3px 20px; }
 
 /*# sourceMappingURL=main.css.map */

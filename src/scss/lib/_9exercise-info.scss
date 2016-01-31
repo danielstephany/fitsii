@@ -1,0 +1,85 @@
+/* exercise description *********************************
+********************************************************/
+
+.exercise-title {
+	width: 100%;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	h1 {
+		color: #fff;
+		margin: 0;
+		padding: 20px 0;
+	}
+}
+
+.exercise-body {
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+	display: block;
+	padding: 10px;
+	margin: 0;
+	img {
+		border-radius: 10px;
+		@media only screen and (min-width: 650px) {
+			margin-top: 40px;
+			width: 35%;
+			float: left;
+		}
+	}
+}
+
+.pose-steps {
+	display: block;
+	padding: 20px 0;
+	margin: 0;
+	min-height: 400px;
+	@media only screen and (min-width: 650px) {
+			display: inline-block;
+			padding: 0px 10px;
+			width: 65%;
+			float: right;
+		}
+	h2 {
+		color: #fff;
+		font-size: 1.4em;
+		margin: 0;
+		padding: 20px;
+		text-align: center;
+	}
+	ul {
+		li{
+			display: inline-block;
+			width: 100%;
+			p {
+				color: #b2d1d8;
+			}
+		}
+	}
+}
+
+.benifits {
+	display: block;
+	padding: 20px 0;
+	@media only screen and (min-width: 650px) {
+			width: 35%;
+			float: left;
+		}
+	h2 {
+		color: #fff;
+		font-size: 1.4em;
+		margin: 0;
+		padding: 10px 0;
+		text-align: center;
+	}
+	ul {
+		margin: 0;
+		padding: 10px 0;
+		li {
+			color: #b2d1d8;
+			display: block;
+			margin: 0;
+			padding: 3px 0 3px 20px;
+		}
+	}
+}

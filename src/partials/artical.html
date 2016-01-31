@@ -1,10 +1,9 @@
 <div class="veiw-container ">
 	<div class="wrap">
 		<div class="artical">
-		<h1>health stuff for your brain</h1>
-		<p class="artical-p">Stumptown iPhone scenester pinterest flannel. Intelligentsia semiotics locavore squid, ugh pour-over dreamcatcher mlkshk YOLO green juice art party. Blog four dollar toast shoreditch, cold-pressed venmo slow-carb kogi occupy lo-fi. Intelligentsia lumbersexual chartreuse, mumblecore cronut 3 wolf moon irony keytar kale chips 8-bit chillwave retro neutra. Tousled kombucha retro, vegan</p>
-		<p class="artical-p">	Stumptown iPhone scenester pinterest flannel. Intelligentsia semiotics locavore squid, ugh pour-over dreamcatcher mlkshk YOLO green juice art party. Blog four dollar toast shoreditch, cold-pressed venmo slow-carb kogi occupy lo-fi. Intelligentsia lumbersexual chartreuse, mumblecore cronut 3 wolf moon irony keytar kale chips 8-bit chillwave retro neutra. Tousled kombucha retro, vegan</p>
-		<p class="author">written by Daniel Stephany</p>
+		<h1>{{artical.title}}</h1>
+		<p ng-repeat="data in artical.body" class="artical-p">{{data}}</p>
+		<p class="author">{{artical.author}}</p>
 		</div>
 	</div>
-	</div>
+</div>
