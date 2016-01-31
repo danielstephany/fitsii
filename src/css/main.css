@@ -602,6 +602,10 @@ footer {
   padding: 5px 10px;
   width: 100%;
   text-align: center; }
+  @media (min-width: 600px) {
+    .home-info {
+      width: 80%;
+      margin: 200px auto 0; } }
   .home-info h2 {
     color: #b2d1d8;
     font-size: 2em;
@@ -609,7 +613,8 @@ footer {
     padding: 0; }
   .home-info p {
     color: #b2d1d8;
-    margin: 5px; }
+    margin: 5px;
+    text-align: left; }
 
 /* search list styles ********************************************
 *****************************************************/
@@ -687,11 +692,14 @@ footer {
   .artical .artical-p {
     color: #b2d1d8;
     margin: 20px auto;
-    text-indent: 30px;
-    max-width: 800px; }
+    max-width: 700px; }
   .artical .author {
     color: #b2d1d8;
-    margin: 20px auto; }
+    margin: 20px;
+    float: right; }
+    @media (min-width: 600px) {
+      .artical .author {
+        margin: 20px 60px; } }
 
 /* exercise description *********************************
 ********************************************************/
@@ -752,9 +760,9 @@ footer {
   .benifits h2 {
     color: #fff;
     font-size: 1.4em;
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 10px 0;
-    text-align: center; }
+    text-align: left; }
   .benifits ul {
     margin: 0;
     padding: 10px 0; }

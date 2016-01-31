@@ -30,6 +30,10 @@
 	margin: 100px 0 0;
 	padding: 5px 10px;
 	width: 100%;
+	@media (min-width: 600px) {
+		width: 80%;
+		margin: 200px auto 0;
+	}
 	text-align: center;
 	h2 {
 		color: #b2d1d8;
@@ -40,6 +44,7 @@
 	p {
 		color: #b2d1d8;
 		margin: 5px;
+		text-align: left;
 	}
 
 }
