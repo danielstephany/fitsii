@@ -46,6 +46,9 @@ header {
 				font-size: 1.2em;
 				padding: 0;
 				margin: 0;
+				&:hover {
+					color: #76aece;
+				}
 			}
 		}
 	}

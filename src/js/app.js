@@ -2,6 +2,7 @@
 
 var fitsiiApp = angular.module('fitsiiApp', [
 	'ngRoute',
+	'ngAnimate',
 	'fitsiiControllers'
 ]);
 

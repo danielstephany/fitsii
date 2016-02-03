@@ -6,6 +6,17 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var maps = require('gulp-sourcemaps');
+var minifyHTML = require('gulp-htmlmin');
+var cssnano = require('gulp-cssnano');
+
+gulp.task("minifyHTML", function(){
+	return gulp.src([
+		'src/*.html',
+		'src/partials/*.html',
+		], { base: './src/'})
+	.pipe(minifyHTML({collapseWhitespace: true}))
+	.pipe(gulp.dest("dist/src"))
+});
 
 gulp.task('concatScrips', function() {
 	return gulp.src([
@@ -36,14 +47,20 @@ gulp.task('compileSass', function() {
 		.pipe(gulp.dest('src/css'));
 });
 
+
 gulp.task('watchSass', function() {
 	gulp.watch('src/scss/**/*.scss', ['compileSass']);
 });
 
-gulp.task('watchjs', function() {
-	gulp.watch('src/js/**/*.js', ['concatScrips', 'minifyScripts']);
+gulp.task('build', ['minifyHTML', 'compileSass', 'minifyScripts'], function() {
+	return gulp.src(['src/css/**', 'src/js/main.min.js', 'src/mock/**', "src/img/**"], { base: './'})
+			.pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['concatScrips','minifyScripts','compileSass']);
-
 gulp.task('default', ['build']);
+
+
+
+
+
+

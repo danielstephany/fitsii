@@ -1,6 +1,7 @@
 /* Base styles *********************************************
 ***********************************************************/
 html {
+  position: relative;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -34,3 +35,20 @@ html {
   	text-decoration: none;
   }
 
+::-webkit-scrollbar {
+    width: 0;
+    @media (min-width: 600px){
+      width: 14px;
+    }
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

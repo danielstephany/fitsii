@@ -7,13 +7,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="FitSii is a one stop spot for your fitness logging neads">
 		<meta name="author" content="Daniel Stephany">
+		<meta name="robots" content="noindex">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/fitsii.png">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
+		<script src="js/angular-animate.min.js"></script>
    		<script src="js/app.js"></script>
 	    <script src="js/controllers.js"></script>
-	    <script src="js/filters.js"></script>
-		<script src="js/services.js"></script>
 	</head>
 	<body>
 	<div class="home"></div>
@@ -41,23 +42,25 @@
 				</nav>
 			</header>
 
-			<div ng-view></div>
+			<div class="view-container">
+				<div ng-view class="view-frame"></div>
+			</div>
 
 		</div>
 	</div>
 	<footer>
 		<ul class="foot-nav">
 			<li>
-				<a href="">Yoga</a>
+				<a href="#/yoga">Yoga</a>
 			</li>
 			<li>
-				<a href="">HITT</a>
+				<a href="#/hiit">HITT</a>
 			</li>
 			<li>
-				<a href="">Diet</a>
+				<a href="#/articals">Diet</a>
 			</li>
 			<li>
-				<a href="">Main</a>
+				<a href="#/">Main</a>
 			</li>
 		</ul>
 		<p class="copy">Created by <a href="https://www.danielstephany.com">&copy; Daniel Stephany</a></p>
